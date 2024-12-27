@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(90deg, #000785, #0095cf, #030038);
+  background-color: black;
+  color: white;
+  
+  width: 100%; /* Use 100% instead of 100vw */
+}
+
+html, body {
+  width: 100%; /* Make sure body takes up full width */
+  height: 100%; /* Ensure full height */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrollbars */
+}
+
+button {
+  position: relative;
+  z-index: 10; /* Ensure the button is on top */
+  opacity: 1; /* Make sure it's fully visible */
+}
+.project-button-container {
+  display: flex;             /* Enable flexbox layout */
+  gap: 8px;                  /* Set the gap between buttons */
+  flex-direction: row;       /* Align buttons in a row */
+  justify-content: flex-start; /* Optional: Align buttons to the left */
+  margin-top: 10px;          /* Optional: Add some space above buttons */
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+
+
+
+
